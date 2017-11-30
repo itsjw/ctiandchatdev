@@ -15,7 +15,7 @@
 
 ## License
 
-Copyright © 2015 [Jon Schlinkert](https://github.com/jonschlinkert)
+Copyright © 2015 [Ahmad Wahyudin](https://github.com/visualandcode)
 Released under the MIT license.
 
 ***
