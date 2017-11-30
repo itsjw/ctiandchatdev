@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/library/ico/favicon.png">
+
+    <title>User Chat and CTI Development</title>
+
+    <link href="/library/css/bootstrap.css" rel="stylesheet">
+
+    <link href="/library/css/navbar-fixed-top.css" rel="stylesheet">
+    <link href="/library/css/Footer-with-button-logo.css" rel="stylesheet">
+
+      <script type="text/javascript">
+        window.document.baseurl = '<%= baseurl %>/' ;
+        window.document.client  = '<%= client %>/' ;
+      </script>
+
+      <script src="/library/js/jquery.js"></script>
+      <script src="/library/js/mainjs.js"></script>
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="/library/js/html5shiv.js"></script>
+      <script src="/library/js/respond.min.js"></script>
+      <script src="/library/js/mainlayout.js"></script>
+      <script src="/library/js/transaction.js"></script>
+      <script src="/library/js/sock_transaction.js"></script>
+
+      
+  </head>
+
+  <body>
+
+<div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-envelope"></span> Chat and CTI</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <!--class="active" -->
+            <li><a href="/">Home</a></li>
+            <li><a href="/userchat">Chat</a></li>
+            <li><a href="/cti">CTI</a></li>          
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setting CTI <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">CTI Module</a></li>
+                <li><a href="#">IVR Module</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Setting Conf</li>
+                <li><a href="#">Extension</a></li>
+                <li><a href="#">Dialplan</a></li>
+                <li><a href="#">CLI Console</a></li>
+              </ul>
+            </li>
+            <li><a href="/login/out">Logout</a></li>          
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/docchat">Document Chat</a></li>
+            <li><a href="/doccti">Document CTI</a></li>
+          </ul>
+
+        </div><!--/.nav-collapse -->
+      </div>
+</div>
+
+<div class="container loadcontent">
+
+<%-body -%>
+
+
+</div> <!-- /container -->
+
+<footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3 class="logo"><a href="#"> ONEAXXALL </a></h3>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <button type="button" class="btn btn-default">Contact us</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2017 Copyright visualandcode.com </p>
+        </div>
+    </footer>
+
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/library/js/bootstrap.min.js"></script>
+  </body>
+</html>
